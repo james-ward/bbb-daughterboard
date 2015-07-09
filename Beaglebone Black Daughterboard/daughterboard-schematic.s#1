@@ -781,20 +781,6 @@ at 30/07/2012 17:45:58</description>
 <label x="172.72" y="40.64" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="QEP0A" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="E"/>
-<wire x1="109.22" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
-<label x="109.22" y="58.42" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="QEP0B" class="0">
-<segment>
-<pinref part="U1" gate="A" pin="F"/>
-<wire x1="109.22" y1="55.88" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
-<label x="109.22" y="55.88" size="1.778" layer="95"/>
-</segment>
-</net>
 <net name="EQEP1A" class="0">
 <segment>
 <pinref part="SV5" gate="1" pin="15"/>
@@ -892,16 +878,18 @@ at 30/07/2012 17:45:58</description>
 <label x="55.88" y="48.26" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$1" class="0">
+<net name="QEP0A" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="A"/>
 <wire x1="68.58" y1="38.1" x2="55.88" y2="38.1" width="0.1524" layer="91"/>
+<label x="55.88" y="38.1" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="N$2" class="0">
+<net name="QEP0B" class="0">
 <segment>
 <pinref part="U1" gate="A" pin="B"/>
 <wire x1="68.58" y1="35.56" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
+<label x="55.88" y="35.56" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="EQEP0B" class="0">
@@ -910,12 +898,22 @@ at 30/07/2012 17:45:58</description>
 <wire x1="139.7" y1="63.5" x2="129.54" y2="63.5" width="0.1524" layer="91"/>
 <label x="129.54" y="63.5" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U1" gate="A" pin="F"/>
+<wire x1="109.22" y1="55.88" x2="121.92" y2="55.88" width="0.1524" layer="91"/>
+<label x="109.22" y="55.88" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="EQEP0A" class="0">
 <segment>
 <pinref part="SV3" gate="1" pin="2"/>
 <wire x1="154.94" y1="45.72" x2="165.1" y2="45.72" width="0.1524" layer="91"/>
 <label x="154.94" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="E"/>
+<wire x1="109.22" y1="58.42" x2="121.92" y2="58.42" width="0.1524" layer="91"/>
+<label x="109.22" y="58.42" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
