@@ -19,6 +19,7 @@ UsedLibrary="/home/arthur/Dropbox/Stealthy/eagle-7.3.0/lbr/74xx-little-us.lbr"
 UsedLibrary="/home/arthur/Dropbox/Stealthy/eagle-7.3.0/lbr/74xx-us.lbr"
 UsedLibrary="/home/arthur/Dropbox/Stealthy/eagle-7.3.0/lbr/751xx.lbr"
 UsedLibrary="/home/arthur/Dropbox/Stealthy/eagle-7.3.0/lbr/IQD-Frequency-Products.lbr"
+UsedLibrary="/home/arthur/Dropbox/Stealthy/eagle-7.3.0/lbr/Texas Instruments_By_element14_Batch_1.lbr"
 UsedLibrary="/home/arthur/Dropbox/Stealthy/eagle-7.3.0/lbr/advanced-test-technologies.lbr"
 UsedLibrary="/home/arthur/Dropbox/Stealthy/eagle-7.3.0/lbr/agilent-technologies.lbr"
 UsedLibrary="/home/arthur/Dropbox/Stealthy/eagle-7.3.0/lbr/allegro.lbr"
@@ -346,11 +347,12 @@ UsedLibrary="/home/arthur/Dropbox/Stealthy/eagle-7.3.0/lbr/xilinx-xc9.lbr"
 UsedLibrary="/home/arthur/Dropbox/Stealthy/eagle-7.3.0/lbr/xilinx-xcv.lbr"
 UsedLibrary="/home/arthur/Dropbox/Stealthy/eagle-7.3.0/lbr/zetex.lbr"
 UsedLibrary="/home/arthur/Dropbox/Stealthy/eagle-7.3.0/lbr/zilog.lbr"
+UsedLibrary="/home/arthur/Dropbox/Stealthy/git/bbb-daughterboard/lbr/Texas Instruments_By_element14_Batch_1.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="1127 140 1726 539"
-State=1
+Loc="679 287 1278 686"
+State=2
 Number=0
 
 [Desktop]
