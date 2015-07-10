@@ -895,6 +895,16 @@ at 30/07/2012 17:45:58</description>
 <wire x1="-2.54" y1="48.26" x2="-15.24" y2="48.26" width="0.1524" layer="91"/>
 <label x="-15.24" y="48.26" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="U2" gate="A" pin="ENABLE_C"/>
+<wire x1="-2.54" y1="45.72" x2="-15.24" y2="45.72" width="0.1524" layer="91"/>
+<label x="-15.24" y="45.72" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U2" gate="A" pin="ENABLE_D"/>
+<wire x1="-2.54" y1="43.18" x2="-15.24" y2="43.18" width="0.1524" layer="91"/>
+<label x="-15.24" y="43.18" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="QEP0A" class="0">
 <segment>
