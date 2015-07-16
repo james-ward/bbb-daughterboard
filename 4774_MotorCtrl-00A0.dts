@@ -1,0 +1,245 @@
+/dts-v1/;
+/plugin/;
+
+/{
+    compatible = "ti,beaglebone-black";
+    part_number = "TEAM4774-IMU-PWM-QEP";
+    version = "00A0";
+
+    exclusive-use =
+        /* the pin header uses */
+        "P9.29", /* pwm: ehrpwm0B */
+        "P8.36", /* pwm: ehrpwm1A */
+        "P8.45", /* pwm: ehrpwm2A */
+        "P9.42", /* eqep0a */
+        "P9.27", /* eqep0b */
+        "P8.33", /* eqep1a */
+        "P8.35", /* eqep1b */
+        "P8.12", /* eqep2a */
+        "P8.11", /* eqep2b */
+        
+        /* the hardware IP uses */
+        "ehrpwm0B",
+        "ehrpwm1A",
+        "ehrpwm2A",
+        "epwmss0",
+        "epwmss1",
+        "epwmss2",
+        "eqep0",
+        "eqep1",
+        "eqep2";
+
+
+    fragment@0 {
+        target = <&am33xx_pinmux>;
+        __overlay__ {
+		pinctrl_eqep0: pinctrl_eqep0_pins {
+			pinctrl-single,pins = <
+                        //0x1A8 0x21  /* P9_41 = GPIO3_20 = EQEP0_index, MODE1 */
+                        //0x1AC 0x21  /* P9_25 = GPIO3_21 = EQEP0_strobe, MODE1 */
+                        0x1A0 0x31  /* P9_42 = GPIO3_18 = EQEP0A_in, MODE1 */
+                        0x1A4 0x31  /* P9_27 = GPIO3_19 = EQEP0B_in, MODE1 */
+			>;
+		};
+        };
+    };
+
+    fragment@1 {
+        target = <&am33xx_pinmux>;
+        __overlay__ {
+        	pinctrl_eqep1: pinctrl_eqep1_pins {
+                pinctrl-single,pins = <					 				   
+                    //0x0D8 0x22  /* P8_31 = GPIO0_10 = EQEP1_index, MODE2 */
+                    //0x0DC 0x22  /* P8_32 = GPIO0_11 = EQEP1_strobe, MODE2 */
+                    0x0D4 0x32  /* P8_33 = GPIO0_9 = EQEP1B_in, MODE2 */
+                    0x0D0 0x32  /* P8_35 = GPIO0_8 = EQEP1A_in, MODE2 */
+                >;
+            };
+        };
+    };
+    
+    fragment@2 {
+        target = <&am33xx_pinmux>;
+        __overlay__ {
+            pinctrl_eqep2: pinctrl_eqep2_pins {
+                pinctrl-single,pins = <					 				   
+                    //0x0B8 0x23  /* P8_39 = GPIO2_12 = EQEP2_index, MODE3 */
+                    //0x0BC 0x23  /* P8_40 = GPIO2_13 = EQEP2_strobe, MODE3 */
+                    0x030 0x34 /* P8_12 = GPIO1_12 = EQEP2A_in, MODE4 */
+                    0x034 0x34 /* P8_11 = GPIO1_13 = EQEP2B_in, MODE4 */
+                >;
+            };
+        };
+    };
+
+    fragment@3 {
+        target = <&epwmss0>;
+        __overlay__ {
+            status = "okay";
+        };
+    };
+
+    fragment@4 {
+        target = <&epwmss1>;
+        __overlay__ {
+            status = "okay";
+        };
+    };
+
+    fragment@5 {
+        target = <&epwmss2>;
+        __overlay__ {
+            status = "okay";
+        };
+    };
+
+    fragment@6 {
+	target = <&eqep0>;
+	__overlay__ {
+            pinctrl-names = "default";
+            pinctrl-0 = <&pinctrl_eqep0>;
+
+            count_mode = <0>;  /* 0 - Quadrature mode, normal 90 phase offset cha & chb.  1 - Direction mode.  cha input = clock, chb input = direction */
+            swap_inputs = <0>; /* Are channel A and channel B swapped? (0 - no, 1 - yes) */
+            invert_qa = <0>;   /* Should we invert the channel A input? */
+            invert_qb = <0>;   /* Should we invert the channel B input? */
+            invert_qi = <0>;   /* Should we invert the index input? */
+            invert_qs = <0>;   /* Should we invert the strobe input? */
+
+            status = "okay";
+	};
+    };
+
+    fragment@7 {
+    	target = <&eqep1>;
+    	__overlay__ {
+            pinctrl-names = "default";
+            pinctrl-0 = <&pinctrl_eqep1>;
+            
+            count_mode = <0>;  /* 0 - Quadrature mode, normal 90 phase offset cha & chb.  1 - Direction mode.  cha input = clock, chb input = direction */
+            swap_inputs = <0>; /* Are channel A and channel B swapped? (0 - no, 1 - yes) */
+            invert_qa = <0>;   /* Should we invert the channel A input? */
+            invert_qb = <0>;   /* Should we invert the channel B input? */
+            invert_qi = <0>;   /* Should we invert the index input? */
+            invert_qs = <0>;   /* Should we invert the strobe input? */
+
+            status = "okay";
+    	};
+    };
+    
+    fragment@8 {
+    	target = <&eqep2>;
+    	__overlay__ {
+            pinctrl-names = "default";
+            pinctrl-0 = <&pinctrl_eqep2>;
+            
+            count_mode = <0>;  /* 0 - Quadrature mode, normal 90 phase offset cha & chb.  1 - Direction mode.  cha input = clock, chb input = direction */
+            swap_inputs = <0>; /* Are channel A and channel B swapped? (0 - no, 1 - yes) */
+            invert_qa = <0>;   /* Should we invert the channel A input? */
+            invert_qb = <0>;   /* Should we invert the channel B input? */
+            invert_qi = <0>;   /* Should we invert the index input? */
+            invert_qs = <0>;   /* Should we invert the strobe input? */
+            
+            status = "okay";
+    	};
+    };
+
+    fragment@15 {
+        target = <&ehrpwm0>;
+        __overlay__ {
+            status = "okay";
+        };
+    };
+    fragment@16 {
+        target = <&ehrpwm1>;
+        __overlay__ {
+            status = "okay";
+        };
+    };
+    fragment@17 {
+        target = <&ehrpwm2>;
+        __overlay__ {
+            status = "okay";
+        };
+    };
+
+
+    fragment@9 {
+        target = <&am33xx_pinmux>;
+            __overlay__ {
+                pwm_P9_29: pinmux_pwm_P9_29_pins {
+                    pinctrl-single,pins = <0x194  0x1>; /* P9_29 (ZCZ ball B13) | MODE 1 */
+                };
+            };
+    };
+
+    fragment@10 {
+        target = <&ocp>;
+            __overlay__ {
+                pwm_test_P9_29 {
+                    compatible = "pwm_test";
+                    pwms = <&ehrpwm0 1 10000000 1>;
+                    pwm-names = "PWM_P9_29";
+                    pinctrl-names = "default";
+                    pinctrl-0 = <&pwm_P9_29>;
+                    enabled = <0>;
+                    duty = <0>;
+                    status = "okay";
+                };
+            };
+    };
+
+    fragment@11 {
+        target = <&am33xx_pinmux>;
+            __overlay__ {
+                pwm_P8_36: pinmux_pwm_P8_36_pins {
+                    pinctrl-single,pins = <0x0c8  0x2>; /* P8_36 (ZCZ ball U3) | MODE 2 */
+                };
+            };
+    };
+
+    fragment@12 {
+        target = <&ocp>;
+            __overlay__ {
+                pwm_test_P8_36 {
+                    compatible = "pwm_test";
+                    pwms = <&ehrpwm1 1 10000000 1>;
+                    pwm-names = "PWM_P8_36";
+                    pinctrl-names = "default";
+                    pinctrl-0 = <&pwm_P8_36>;
+                    enabled = <0>;
+                    duty = <0>;
+                    status = "okay";
+                };
+            };
+    };
+
+    fragment@13 {
+        target = <&am33xx_pinmux>;
+            __overlay__ {
+                pwm_P8_45: pinmux_pwm_P8_45_pins {
+                    pinctrl-single,pins = <0x0a0  0x3>; /* P8_45 (ZCZ ball R1) | MODE 3 */
+                };
+            };
+    };
+
+    fragment@14 {
+        target = <&ocp>;
+            __overlay__ {
+                pwm_test_P8_45 {
+                    compatible = "pwm_test";
+                    pwms = <&ehrpwm2 1 10000000 1>;
+                    pwm-names = "PWM_P9_29";
+                    pinctrl-names = "default";
+                    pinctrl-0 = <&pwm_P8_45>;
+                    enabled = <0>;
+                    duty = <0>;
+                    status = "okay";
+                };
+            };
+    };
+
+
+
+};
+
