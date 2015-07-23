@@ -1760,6 +1760,11 @@
 <text x="25.7556" y="18.288" size="1.016" layer="21">S</text>
 <text x="31.3182" y="24.6888" size="1.016" layer="21">MPU6050</text>
 <text x="31.3944" y="22.86" size="1.016" layer="21">+</text>
+<text x="41.6814" y="30.2514" size="1.016" layer="21">5V</text>
+<text x="30.4038" y="30.1752" size="1.016" layer="21">3V</text>
+<text x="35.052" y="32.8422" size="1.016" layer="21">QEPV</text>
+<text x="21.2598" y="28.8036" size="1.016" layer="21">A1</text>
+<text x="30.3276" y="28.8036" size="1.016" layer="21">A0</text>
 </plain>
 <libraries>
 <library name="rcl">
