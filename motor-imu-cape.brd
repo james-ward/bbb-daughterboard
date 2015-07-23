@@ -1750,21 +1750,21 @@
 <rectangle x1="13.9065" y1="43.1673" x2="15.0495" y2="43.2435" layer="22"/>
 <rectangle x1="13.9827" y1="43.2435" x2="14.8209" y2="43.3197" layer="22"/>
 <rectangle x1="14.2875" y1="43.3197" x2="14.6685" y2="43.3959" layer="22"/>
-<text x="8.001" y="18.288" size="1.016" layer="21">B</text>
-<text x="10.5156" y="18.288" size="1.016" layer="21">A</text>
-<text x="13.1064" y="18.288" size="1.016" layer="21">-</text>
-<text x="15.621" y="18.288" size="1.016" layer="21">+</text>
+<text x="8.3058" y="18.288" size="1.016" layer="21">B</text>
+<text x="10.8966" y="18.288" size="1.016" layer="21">A</text>
+<text x="13.6398" y="18.288" size="1.016" layer="21">-</text>
+<text x="16.0782" y="18.288" size="1.016" layer="21">+</text>
 <text x="10.4394" y="20.0406" size="1.016" layer="21">QEP0</text>
 <text x="21.717" y="20.0406" size="1.016" layer="21">PWM0</text>
-<text x="20.7264" y="18.288" size="1.016" layer="21">-</text>
-<text x="25.7556" y="18.288" size="1.016" layer="21">S</text>
+<text x="21.2598" y="18.288" size="1.016" layer="21">-</text>
+<text x="26.1366" y="18.288" size="1.016" layer="21">S</text>
 <text x="31.3182" y="24.6888" size="1.016" layer="21">MPU6050</text>
-<text x="31.3944" y="22.86" size="1.016" layer="21">+</text>
-<text x="41.6814" y="30.2514" size="1.016" layer="21">5V</text>
-<text x="30.4038" y="30.1752" size="1.016" layer="21">3V</text>
+<text x="32.6898" y="22.2504" size="1.016" layer="21">+</text>
+<text x="38.6334" y="32.6898" size="1.016" layer="21">5V</text>
+<text x="33.6042" y="32.6898" size="1.016" layer="21">3V</text>
 <text x="35.052" y="32.8422" size="1.016" layer="21">QEPV</text>
-<text x="21.2598" y="28.8036" size="1.016" layer="21">A1</text>
-<text x="30.3276" y="28.8036" size="1.016" layer="21">A0</text>
+<text x="24.765" y="32.5374" size="1.016" layer="21">A1</text>
+<text x="27.2796" y="32.5374" size="1.016" layer="21">A0</text>
 </plain>
 <libraries>
 <library name="rcl">
