@@ -1758,13 +1758,15 @@
 <text x="21.717" y="20.0406" size="1.016" layer="21">PWM0</text>
 <text x="21.2598" y="18.288" size="1.016" layer="21">-</text>
 <text x="26.1366" y="18.288" size="1.016" layer="21">S</text>
-<text x="31.3182" y="24.6888" size="1.016" layer="21">MPU6050</text>
+<text x="38.9382" y="13.716" size="1.016" layer="21">GY-521</text>
 <text x="32.6898" y="22.2504" size="1.016" layer="21">+</text>
-<text x="39.3192" y="32.6898" size="1.016" layer="21">5V</text>
-<text x="32.6898" y="32.6136" size="1.016" layer="21">3V</text>
+<text x="33.4518" y="32.5374" size="1.016" layer="21">5V</text>
+<text x="38.481" y="32.5374" size="1.016" layer="21">3V</text>
 <text x="24.765" y="32.5374" size="1.016" layer="21">A1</text>
 <text x="27.2796" y="32.5374" size="1.016" layer="21">A0</text>
-<text x="34.8996" y="32.6136" size="1.016" layer="21">ENCV</text>
+<text x="32.5374" y="27.2796" size="1.016" layer="21">V ENCODER</text>
+<text x="48.2346" y="1.905" size="1.27" layer="22" rot="MR0">FRC Team 4774
+The Drop Bears</text>
 </plain>
 <libraries>
 <library name="rcl">
@@ -4289,6 +4291,15 @@ design rules under a new name.</description>
 <wire x1="16.51" y1="8.89" x2="16.764" y2="8.636" width="0.254" layer="16"/>
 </signal>
 </signals>
+<errors>
+<approved hash="18,30,691899d9d9d92918"/>
+</errors>
 </board>
 </drawing>
+<compatibility>
+<note version="6.3" minversion="6.2.2" severity="warning">
+Since Version 6.2.2 text objects can contain more than one line,
+which will not be processed correctly with this version.
+</note>
+</compatibility>
 </eagle>
