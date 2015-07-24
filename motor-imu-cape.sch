@@ -7710,15 +7710,15 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 </class>
 </classes>
 <parts>
-<part name="SV7" library="con-lstb" deviceset="MA08-1" device=""/>
+<part name="GY-521" library="con-lstb" deviceset="MA08-1" device=""/>
 <part name="IC1" library="ic-package" deviceset="DIL16" device="" value="40109"/>
 <part name="IC2" library="ic-package" deviceset="DIL16" device="" value="40109"/>
-<part name="SV8" library="con-lstb" deviceset="MA03-1" device=""/>
-<part name="SV9" library="con-lstb" deviceset="MA03-1" device=""/>
-<part name="SV10" library="con-lstb" deviceset="MA03-1" device=""/>
-<part name="SV11" library="con-lstb" deviceset="MA04-1" device=""/>
-<part name="SV12" library="con-lstb" deviceset="MA04-1" device=""/>
-<part name="SV13" library="con-lstb" deviceset="MA04-1" device=""/>
+<part name="PWM0" library="con-lstb" deviceset="MA03-1" device=""/>
+<part name="PWM1" library="con-lstb" deviceset="MA03-1" device=""/>
+<part name="PWM2" library="con-lstb" deviceset="MA03-1" device=""/>
+<part name="QEP0" library="con-lstb" deviceset="MA04-1" device=""/>
+<part name="QEP1" library="con-lstb" deviceset="MA04-1" device=""/>
+<part name="QEP2" library="con-lstb" deviceset="MA04-1" device=""/>
 <part name="P9" library="pinheader-2x23" deviceset="PINHD-2X23" device=""/>
 <part name="P8" library="pinheader-2x23" deviceset="PINHD-2X23" device=""/>
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
@@ -7752,9 +7752,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <part name="R5" library="rcl" deviceset="R-EU_" device="0204/7" value="5.6k"/>
 <part name="+3V9" library="supply1" deviceset="+3V3" device=""/>
 <part name="+3V10" library="supply1" deviceset="+3V3" device=""/>
-<part name="JP1" library="pinhead" deviceset="PINHD-2X2" device=""/>
+<part name="ADDR" library="pinhead" deviceset="PINHD-2X2" device=""/>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
-<part name="JP2" library="pinhead" deviceset="PINHD-1X3" device=""/>
+<part name="V_ENCODER" library="pinhead" deviceset="PINHD-1X3" device=""/>
 <part name="P+6" library="supply1" deviceset="+5V" device=""/>
 <part name="+3V11" library="supply1" deviceset="+3V3" device=""/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
@@ -7771,15 +7771,15 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <text x="20.32" y="43.18" size="1.778" layer="91">I2C EEPROM</text>
 </plain>
 <instances>
-<instance part="SV7" gate="1" x="88.9" y="93.98" rot="R180"/>
+<instance part="GY-521" gate="1" x="88.9" y="93.98" rot="R180"/>
 <instance part="IC1" gate="G$1" x="91.44" y="50.8"/>
 <instance part="IC2" gate="G$1" x="91.44" y="22.86"/>
-<instance part="SV8" gate="G$1" x="2.54" y="96.52"/>
-<instance part="SV9" gate="G$1" x="2.54" y="81.28"/>
-<instance part="SV10" gate="G$1" x="2.54" y="66.04"/>
-<instance part="SV11" gate="1" x="33.02" y="96.52"/>
-<instance part="SV12" gate="1" x="33.02" y="78.74"/>
-<instance part="SV13" gate="1" x="33.02" y="60.96"/>
+<instance part="PWM0" gate="G$1" x="2.54" y="96.52"/>
+<instance part="PWM1" gate="G$1" x="2.54" y="81.28"/>
+<instance part="PWM2" gate="G$1" x="2.54" y="66.04"/>
+<instance part="QEP0" gate="1" x="33.02" y="96.52"/>
+<instance part="QEP1" gate="1" x="33.02" y="78.74"/>
+<instance part="QEP2" gate="1" x="33.02" y="60.96"/>
 <instance part="P9" gate="A" x="147.32" y="68.58"/>
 <instance part="P8" gate="A" x="190.5" y="68.58"/>
 <instance part="GND1" gate="1" x="134.62" y="38.1"/>
@@ -7813,9 +7813,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <instance part="R5" gate="G$1" x="45.72" y="35.56" rot="R90"/>
 <instance part="+3V9" gate="G$1" x="-15.24" y="40.64"/>
 <instance part="+3V10" gate="G$1" x="10.16" y="50.8"/>
-<instance part="JP1" gate="A" x="-2.54" y="15.24" rot="R90"/>
+<instance part="ADDR" gate="A" x="-2.54" y="15.24" rot="R90"/>
 <instance part="GND13" gate="1" x="-2.54" y="2.54"/>
-<instance part="JP2" gate="A" x="147.32" y="20.32" rot="R270"/>
+<instance part="V_ENCODER" gate="A" x="147.32" y="20.32" rot="R270"/>
 <instance part="P+6" gate="1" x="154.94" y="33.02"/>
 <instance part="+3V11" gate="G$1" x="139.7" y="33.02"/>
 <instance part="GND14" gate="1" x="10.16" y="30.48"/>
@@ -7830,7 +7830,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="P9" gate="A" pin="29"/>
 </segment>
 <segment>
-<pinref part="SV8" gate="G$1" pin="3"/>
+<pinref part="PWM0" gate="G$1" pin="3"/>
 <wire x1="10.16" y1="99.06" x2="22.86" y2="99.06" width="0.1524" layer="91"/>
 <label x="10.16" y="99.06" size="1.778" layer="95"/>
 </segment>
@@ -7842,7 +7842,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="P8" gate="A" pin="36"/>
 </segment>
 <segment>
-<pinref part="SV9" gate="G$1" pin="3"/>
+<pinref part="PWM1" gate="G$1" pin="3"/>
 <wire x1="10.16" y1="83.82" x2="22.86" y2="83.82" width="0.1524" layer="91"/>
 <label x="10.16" y="83.82" size="1.778" layer="95"/>
 </segment>
@@ -7854,7 +7854,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="P8" gate="A" pin="45"/>
 </segment>
 <segment>
-<pinref part="SV10" gate="G$1" pin="3"/>
+<pinref part="PWM2" gate="G$1" pin="3"/>
 <wire x1="10.16" y1="68.58" x2="22.86" y2="68.58" width="0.1524" layer="91"/>
 <label x="10.16" y="68.58" size="1.778" layer="95"/>
 </segment>
@@ -7914,7 +7914,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="P9" gate="A" pin="20"/>
 </segment>
 <segment>
-<pinref part="SV7" gate="1" pin="4"/>
+<pinref part="GY-521" gate="1" pin="4"/>
 <wire x1="81.28" y1="93.98" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
 <label x="71.12" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -7935,28 +7935,28 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="P9" gate="A" pin="24"/>
 </segment>
 <segment>
-<pinref part="SV7" gate="1" pin="8"/>
+<pinref part="GY-521" gate="1" pin="8"/>
 <wire x1="81.28" y1="83.82" x2="71.12" y2="83.82" width="0.1524" layer="91"/>
 <label x="71.12" y="83.82" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MPUXDA" class="0">
 <segment>
-<pinref part="SV7" gate="1" pin="5"/>
+<pinref part="GY-521" gate="1" pin="5"/>
 <wire x1="81.28" y1="91.44" x2="71.12" y2="91.44" width="0.1524" layer="91"/>
 <label x="71.12" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MPUXCL" class="0">
 <segment>
-<pinref part="SV7" gate="1" pin="6"/>
+<pinref part="GY-521" gate="1" pin="6"/>
 <wire x1="81.28" y1="88.9" x2="71.12" y2="88.9" width="0.1524" layer="91"/>
 <label x="71.12" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="MPUAD0" class="0">
 <segment>
-<pinref part="SV7" gate="1" pin="7"/>
+<pinref part="GY-521" gate="1" pin="7"/>
 <wire x1="81.28" y1="86.36" x2="71.12" y2="86.36" width="0.1524" layer="91"/>
 <label x="71.12" y="86.36" size="1.778" layer="95"/>
 </segment>
@@ -8032,32 +8032,32 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="134.62" y1="43.18" x2="134.62" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV8" gate="G$1" pin="1"/>
+<pinref part="PWM0" gate="G$1" pin="1"/>
 <pinref part="GND5" gate="1" pin="GND"/>
 <wire x1="12.7" y1="93.98" x2="10.16" y2="93.98" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV9" gate="G$1" pin="1"/>
+<pinref part="PWM1" gate="G$1" pin="1"/>
 <pinref part="GND6" gate="1" pin="GND"/>
 <wire x1="12.7" y1="78.74" x2="10.16" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV10" gate="G$1" pin="1"/>
+<pinref part="PWM2" gate="G$1" pin="1"/>
 <pinref part="GND7" gate="1" pin="GND"/>
 <wire x1="12.7" y1="63.5" x2="10.16" y2="63.5" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV11" gate="1" pin="3"/>
+<pinref part="QEP0" gate="1" pin="3"/>
 <pinref part="GND3" gate="1" pin="GND"/>
 <wire x1="40.64" y1="96.52" x2="58.42" y2="96.52" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV12" gate="1" pin="3"/>
+<pinref part="QEP1" gate="1" pin="3"/>
 <pinref part="GND4" gate="1" pin="GND"/>
 <wire x1="40.64" y1="78.74" x2="58.42" y2="78.74" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV13" gate="1" pin="3"/>
+<pinref part="QEP2" gate="1" pin="3"/>
 <pinref part="GND8" gate="1" pin="GND"/>
 <wire x1="40.64" y1="60.96" x2="58.42" y2="60.96" width="0.1524" layer="91"/>
 </segment>
@@ -8072,7 +8072,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="81.28" y1="12.7" x2="83.82" y2="12.7" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="SV7" gate="1" pin="2"/>
+<pinref part="GY-521" gate="1" pin="2"/>
 <pinref part="GND2" gate="1" pin="GND"/>
 <wire x1="81.28" y1="99.06" x2="66.04" y2="99.06" width="0.1524" layer="91"/>
 </segment>
@@ -8092,9 +8092,9 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="55.88" y1="25.4" x2="55.88" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP1" gate="A" pin="1"/>
+<pinref part="ADDR" gate="A" pin="1"/>
 <wire x1="-5.08" y1="10.16" x2="-5.08" y2="5.08" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="3"/>
+<pinref part="ADDR" gate="A" pin="3"/>
 <wire x1="-2.54" y1="10.16" x2="-2.54" y2="5.08" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="5.08" x2="-5.08" y2="5.08" width="0.1524" layer="91"/>
 <pinref part="GND13" gate="1" pin="GND"/>
@@ -8113,7 +8113,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="99.06" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV12" gate="1" pin="2"/>
+<pinref part="QEP1" gate="1" pin="2"/>
 <wire x1="40.64" y1="76.2" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
 <label x="40.64" y="76.2" size="1.778" layer="95"/>
 </segment>
@@ -8125,7 +8125,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="99.06" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV12" gate="1" pin="1"/>
+<pinref part="QEP1" gate="1" pin="1"/>
 <wire x1="40.64" y1="73.66" x2="53.34" y2="73.66" width="0.1524" layer="91"/>
 <label x="40.64" y="73.66" size="1.778" layer="95"/>
 </segment>
@@ -8137,7 +8137,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="68.58" y="45.72" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV11" gate="1" pin="1"/>
+<pinref part="QEP0" gate="1" pin="1"/>
 <wire x1="40.64" y1="91.44" x2="53.34" y2="91.44" width="0.1524" layer="91"/>
 <label x="40.64" y="91.44" size="1.778" layer="95"/>
 </segment>
@@ -8149,7 +8149,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="68.58" y="53.34" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV11" gate="1" pin="2"/>
+<pinref part="QEP0" gate="1" pin="2"/>
 <wire x1="40.64" y1="93.98" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
 <label x="40.64" y="93.98" size="1.778" layer="95"/>
 </segment>
@@ -8161,7 +8161,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="68.58" y="25.4" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV13" gate="1" pin="2"/>
+<pinref part="QEP2" gate="1" pin="2"/>
 <wire x1="40.64" y1="58.42" x2="53.34" y2="58.42" width="0.1524" layer="91"/>
 <label x="40.64" y="58.42" size="1.778" layer="95"/>
 </segment>
@@ -8173,14 +8173,14 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <label x="68.58" y="17.78" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV13" gate="1" pin="1"/>
+<pinref part="QEP2" gate="1" pin="1"/>
 <wire x1="40.64" y1="55.88" x2="53.34" y2="55.88" width="0.1524" layer="91"/>
 <label x="40.64" y="55.88" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<pinref part="SV7" gate="1" pin="1"/>
+<pinref part="GY-521" gate="1" pin="1"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
 <wire x1="81.28" y1="104.14" x2="81.28" y2="101.6" width="0.1524" layer="91"/>
 </segment>
@@ -8241,7 +8241,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="+3V10" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="3"/>
+<pinref part="V_ENCODER" gate="A" pin="3"/>
 <wire x1="144.78" y1="22.86" x2="144.78" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="+3V11" gate="G$1" pin="+3V3"/>
 <wire x1="144.78" y1="30.48" x2="139.7" y2="30.48" width="0.1524" layer="91"/>
@@ -8261,7 +8261,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <wire x1="170.18" y1="88.9" x2="170.18" y2="91.44" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="JP2" gate="A" pin="1"/>
+<pinref part="V_ENCODER" gate="A" pin="1"/>
 <wire x1="149.86" y1="22.86" x2="149.86" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="P+6" gate="1" pin="+5V"/>
 <wire x1="149.86" y1="30.48" x2="154.94" y2="30.48" width="0.1524" layer="91"/>
@@ -8282,7 +8282,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="P9" gate="A" pin="19"/>
 </segment>
 <segment>
-<pinref part="SV7" gate="1" pin="3"/>
+<pinref part="GY-521" gate="1" pin="3"/>
 <wire x1="81.28" y1="96.52" x2="71.12" y2="96.52" width="0.1524" layer="91"/>
 <label x="71.12" y="96.52" size="1.778" layer="95"/>
 </segment>
@@ -8299,7 +8299,7 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="R2" gate="G$1" pin="1"/>
 <pinref part="IC3" gate="G$1" pin="A1"/>
 <wire x1="-7.62" y1="25.4" x2="-5.08" y2="25.4" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="2"/>
+<pinref part="ADDR" gate="A" pin="2"/>
 <wire x1="-5.08" y1="25.4" x2="12.7" y2="25.4" width="0.1524" layer="91"/>
 <wire x1="-5.08" y1="17.78" x2="-5.08" y2="25.4" width="0.1524" layer="91"/>
 </segment>
@@ -8309,29 +8309,29 @@ Source: http://www.mouser.com/ds/2/392/products_18-2245.pdf</description>
 <pinref part="R1" gate="G$1" pin="1"/>
 <pinref part="IC3" gate="G$1" pin="A0"/>
 <wire x1="-15.24" y1="22.86" x2="-2.54" y2="22.86" width="0.1524" layer="91"/>
-<pinref part="JP1" gate="A" pin="4"/>
+<pinref part="ADDR" gate="A" pin="4"/>
 <wire x1="-2.54" y1="22.86" x2="12.7" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="-2.54" y1="22.86" x2="-2.54" y2="17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="V_QEP" class="0">
 <segment>
-<pinref part="JP2" gate="A" pin="2"/>
+<pinref part="V_ENCODER" gate="A" pin="2"/>
 <wire x1="147.32" y1="22.86" x2="147.32" y2="33.02" width="0.1524" layer="91"/>
 <label x="147.32" y="27.94" size="1.778" layer="95" rot="R90"/>
 </segment>
 <segment>
-<pinref part="SV11" gate="1" pin="4"/>
+<pinref part="QEP0" gate="1" pin="4"/>
 <wire x1="40.64" y1="99.06" x2="53.34" y2="99.06" width="0.1524" layer="91"/>
 <label x="40.64" y="99.06" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV12" gate="1" pin="4"/>
+<pinref part="QEP1" gate="1" pin="4"/>
 <wire x1="40.64" y1="81.28" x2="53.34" y2="81.28" width="0.1524" layer="91"/>
 <label x="40.64" y="81.28" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="SV13" gate="1" pin="4"/>
+<pinref part="QEP2" gate="1" pin="4"/>
 <wire x1="40.64" y1="63.5" x2="53.34" y2="63.5" width="0.1524" layer="91"/>
 <label x="40.64" y="63.5" size="1.778" layer="95"/>
 </segment>
